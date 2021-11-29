@@ -1,4 +1,13 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
 
-console.log("Hello, world!");
+const imageArea = document.querySelector(".page-wrap")
+const button = document.querySelector("button")
+
+button.addEventListener("click", function () {
+  imageArea.classList.toggle("grid")
+  
+  if (imageArea.classList.contains("grid")) {
+    button.innerHTML = "grid"
+  } else {
+    button.innerHTML = "list"
+  }
+})

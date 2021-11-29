@@ -1,25 +1,72 @@
-/* a minimalist set of CSS resets */
-
-/* default to border-box */
-html {
+header {
   box-sizing: border-box;
-  font-size: 16px;
 }
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-/* adjust typography defaults */
 body {
-  margin: 1rem;
-  font-family: sans-serif;
-  line-height: 1.5;
+  background: #00131C;
 }
-
-/* images and videos max out at full width */
+h1 {
+  color: white;
+  position: absolute;
+  font-size: 4em;
+}
+h2 {
+  color: white;
+  position: absolute;
+  right: 5px;
+  font-size: 5em;
+}
 img,
 video {
   height: auto;
-  max-width: 100%;
+  max-width: none;
+}
+display: grid;
+grid-template-columns: minmax(10px, 1fr) minmax(10px, 3fr);
+grid-template-rows: min-content min-content 1fr min-content;
+
+
+@media (max-width: 600px) {
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+}
+
+.page-header {
+  grid-column: 1 / -1;
+  background: #00131C;
+}
+
+.page-sidebar {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  background: #00131C;
+}
+.page-nav {
+  grid-column: 2 / 3;
+  background: #00131C;
+}
+.page-main {
+  grid-column: 2 / 3;
+  background: #00131C;
+}
+.page-footer {
+  grid-column: 1 / -1;
+  background: #00131C;
+}
+
+details p {
+  text-transform: none;
+  text-align: left;
+}
+
+article {
+  color: white;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  transition: all 1s;
+}
+.grid.list {
+  grid-template-columns: 1fr;
 }
