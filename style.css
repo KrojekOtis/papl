@@ -1,4 +1,4 @@
-header {
+{
   box-sizing: border-box;
 }
 body {
@@ -57,9 +57,6 @@ details p {
   text-align: left;
 }
 
-article {
-  color: white;
-}
 .grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
