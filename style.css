@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url=("https://cdn.glitch.me/a1cc9d1d-5237-444c-ab67-61afe8e98645%2Fppppp.jpg?v=1638148221933");
+  background-image: url("https://cdn.glitch.me/a1cc9d1d-5237-444c-ab67-61afe8e98645%2Fppppp.jpg?v=1638148221933");
 }
 h1 {
   color: white;
@@ -31,25 +31,25 @@ grid-template-rows: min-content min-content 1fr min-content;
 
 .page-header {
   grid-column: 1 / -1;
-  background: #00131C;
+  
 }
 
 .page-sidebar {
   grid-column: 1 / 2;
   grid-row: 2 / 4;
-  background: #00131C;
+  
 }
 .page-nav {
   grid-column: 2 / 3;
-  background: #00131C;
+  
 }
 .page-main {
   grid-column: 2 / 3;
-  background: #00131C;
+  
 }
 .page-footer {
   grid-column: 1 / -1;
-  background: #00131C;
+
 }
 
 details p {
