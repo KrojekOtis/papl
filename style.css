@@ -24,6 +24,10 @@ p {
   background-color: #CB00E7;
   font-size: 2em;
 }
+nav {
+  font-size: 1.5em;
+  background-color: #ABF2FF;
+}
 img,
 video {
   height: auto;
@@ -74,4 +78,25 @@ details p {
 }
 .grid.list {
   grid-template-columns: 1fr;
+}
+header nav {
+  display: inline-block;
+  position: absolute;
+  top: 2.5em;
+  right: 2.25rem;
+  text-align: right;
+}
+nav li {
+  display: inline-block;
+  margin-left: 1.5em;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav ul {
+    padding-inline-start: 0;
+  }
+nav li a {
+  text-decoration: none;
+  color: #000000;
 }
