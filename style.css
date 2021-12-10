@@ -1,4 +1,4 @@
- {
+{
   box-sizing: border-box;
 }
 body {
@@ -99,4 +99,24 @@ nav ul {
 nav li a {
   text-decoration: none;
   color: #000000;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+
+.paw {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  animation: wiggle 2s infinite linear;
 }
